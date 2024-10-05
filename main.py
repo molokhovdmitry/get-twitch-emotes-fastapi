@@ -74,7 +74,7 @@ def get_user_id(username: str):
 
 
 # Endpoint to get emotes from 7tv
-@app.get("/getUser/{username}")
+@app.get("/getUserStvEmotes/{username}")
 def api_get_stv_user_emotes(username: str):
     base_url = "https://7tv.io/v3/users/twitch/"
     user_id = get_user_id(username)
